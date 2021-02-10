@@ -1,0 +1,476 @@
+/* 
+contents
+------------ 
+default css start
+common css start
+1.0 dashboard css start
+2.0 jobs css start
+3.0 post a new job css start
+4.0 job seeker css start
+5.0 applicant profile css start
+6.0 target applicant profile css start
+7.0 consultant profile css start
+8.0 request css start
+9.0 consultant request css start
+10.0 freelancer profile css start
+*/
+
+
+/* default css start */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/* default css end */
+
+
+/* common css start */
+
+/* top-nav section css start */
+.talent-tracker__top-nav-section{
+    background: linear-gradient(to right, #035a95 0%, #0498bd 100%);
+    height: 113.008px;
+    width: 100%;
+}
+.talent-tracker__logo img{
+    margin: 3%;
+    padding-left: 35px;
+}
+.talent-tracker__logout--btn {
+	height: 49.6px;
+	width: 104px;
+    float: right;
+    margin: 5%;
+	font-size: 16px;
+	font-weight: 600;
+}
+/* top-nav section css end */
+
+/* button css start */
+.talent-tracker--btn{
+	color: #ffffff;
+	background-color: #899d2f;
+    border-radius: 48px;
+    border: none;
+    cursor: pointer;
+}
+.talent-tracker--btn:hover{
+    background-color: #ffffff;
+    color: #899d2f;
+    border: 2px solid #899d2f;
+}
+.talent-tracker--action-btn {
+	height: 30.6px;
+	width: 70px;
+	font-size: 14px;
+	font-weight: 600;
+}
+/* button css start */
+
+/* sidebar css start */
+.talent-tracker__sidebar {
+	background: linear-gradient(to bottom, #035a95 0%, #0498bd 100%);
+	list-style: none;
+	height: 100%;
+}
+.talent-tracker__sidebar li{
+    display: block;
+    padding: 12.8px 0;
+    border-bottom:1px solid #fff;
+}
+.talent-tracker__sidebar li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 0;
+}
+.talent-tracker__sidebar li:hover{
+    background-color: #8fa531;
+}
+.talent-tracker__sidebar--icon img {
+	width: 15px;
+	padding: 0 8px;
+}
+/* sidebar css end */
+
+/* table css start */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+	border: 1px solid #000000;
+	text-align: left;
+	padding: 8px;
+	height: 31px;
+    text-align: center;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/* table css end */
+
+/* footer css etart */
+.talent-tracker__footer-area{
+    background: linear-gradient(to bottom, #035a95 0%, #0498bd 100%);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.talent-tracker__footer-text{
+    color: #ffffff;
+}
+/* footer css end */
+
+/* search box start */
+.talent-tracker__search-box[type=text]{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('assets/images/icons/search.png');
+    background-position: 6px 6px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 15px;
+}
+.talent-tracker__search-box[type=text]:focus {
+    width: 100%;
+}
+/* search box end */
+
+/* pagination start */
+
+/* css code for pagination start */
+
+.flex.items-center.justify-between {
+	text-align: center;
+}
+
+span.relative.z-0.inline-flex.shadow-sm.rounded-md {
+  display: none;
+}
+/* css code for pagination end */
+
+
+.talent-tracker__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .talent-tracker__pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+  
+.talent-tracker__pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+  
+.talent-tracker__pagination a:hover:not(.active){
+    background-color: #ddd;
+}
+/* pagination end */
+
+/* bar css start */
+.talent-tracker__bar {
+	background-color: #035a95;
+	width: 50px;
+	height: 3px;
+}
+/* bar css end */
+
+/* common css end */
+
+
+/* 1.0 dashboard css start */
+.talent-tracker__dashboard--card{
+    width: 100%;
+    height: 160px;
+    margin-top: 23px;
+    border-radius: 10px;
+    position: relative;
+}
+.talent-tracker__dashboard--card-bg1{
+    background-color: #035a95;
+}
+.talent-tracker__dashboard--card-bg2{
+    background-color: #0498bd;
+}
+.talent-tracker__dashboard--card-bg3{
+    background-color: #8fa531;
+}
+.talent-tracker__dashboard--card:hover{
+    box-shadow: 10px 10px 5px grey;
+}
+.talent-tracker__dashboard--card ul {
+	list-style: none;
+	padding: 12px 0 0 11px;
+}
+.talent-tracker__dashboard--card ul li{
+    display: block;
+}
+.talent-tracker__dashboard-card--item {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.talent-tracker__dashboard--card-icon {
+	position: absolute;
+	top: 50%;
+	right: 10%;
+}
+
+/* 1.0 dashboard css end */
+
+/* 2.0 jobs css start */
+.talent-tracker--new-job-btn{
+    height: 40px;
+    width: 249px;
+	font-size: 14px;
+	font-weight: 600;
+}
+/* 2.0 jobs css end */
+
+/* 3.0 post a new job css start */
+.job-post__form--section {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	margin-bottom: 22px;
+	width: 97%;
+}
+.job-post__form-field--title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.job-post__form-field, select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 10px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 12px;
+	font-weight: 500;
+	background-color: #ffffff;
+}
+.job-post__submit--btn-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.job-post__submit--btn {
+    height: 40px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+/* 3.0 post a new job css end */
+
+/* 4.0 job seeker css start */
+.jobseeker__working-area--checkbox{
+    margin-top: 25px;
+    border: 2px solid #035a95;
+    padding: 20px;
+}
+/* 4.0 job seeker css end */
+
+
+/* 5.0 applicant profile css start */
+.talent-tracker__shortlist-btn--section{
+    position: relative;
+    margin-bottom: 100px;
+}
+.talent-tracker__shortlist-btn{
+    height: 40px;
+    width: 126px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.applicant-profile__shortlist--btn{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* 5.0 applicant profile css end */
+
+/* 6.0 target applicant profile css start */
+.targetApplicant__shortlist-btn--section{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.targetApplicant__shortlist--btn{
+    margin: 0;
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* 6.0 target applicant profile css end */
+
+/* 7.0 consultant profile css start */
+.consultantProfile__datePickerArea{
+    position: relative;
+}
+.consultantProfile__calenderIcon {
+	position: absolute;
+	top: 14px;
+	right: 6px;
+}
+.consultantProfile__datePickerField{
+    font-size: 16px;
+}
+.consultantProfile__fromField{
+    font-size: 15px;
+}
+
+.consultant__timeSlotContainer {
+	display: block;
+	position: relative;
+	padding-left: 42px;
+	margin-bottom: 11px;
+	cursor: pointer;
+	font-size: 19px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.consultant__timeSlotContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+
+.consultant__timeSlotcheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+
+.consultant__timeSlotContainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+
+.consultant__timeSlotContainer input:checked ~ .consultant__timeSlotcheckmark {
+    background-color: #2196F3;
+}
+  
+
+.consultant__timeSlotcheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+
+.consultant__timeSlotContainer input:checked ~ .consultant__timeSlotcheckmark:after {
+    display: block;
+}
+  
+
+.consultant__timeSlotContainer .consultant__timeSlotcheckmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+/* 7.0 consultant profile css end */
+
+/* 8.0 request css start */
+.requestList__Title{
+    font-size: 32px;
+    font-weight: 600;
+}
+.request__seeMore--btn {
+	margin: 0;
+	width: 138px;
+	height: 39px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 15px;
+}
+/* 8.0 request css end */
+
+/* 9.0 consultant request css start */
+.consultantRequest--details{
+    color: #000000;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/* 9.0 consultant request css end */
+
+/* 10.0 freelancer profile css start */
+.profile--border {
+	border: 2px solid #000000;
+	border-radius: 10px;
+	height: 272px;
+}
+.freelancerProfile--img{
+    width: 100%;
+}
+.profile--infoSection{
+    padding: 10px;
+}
+.profile--infoItem{
+    font-size: 18px;
+    padding: 8px;
+}
+.profile--balance {
+	font-size: 45px;
+	padding: 8px;
+	font-weight: 600;
+}
+/* 10.0 freelancer profile css end */

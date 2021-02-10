@@ -1,0 +1,885 @@
+/* 
+contents
+----------------------------------------------------------------------------------------
+default css start
+common css start
+1.0 top nav component css start 
+2.0 top banner component css start
+3.0 about component css start
+4.0 management team css start
+5.0 client component css start
+6.0 service component css start
+7.0 consultant and career advisor component css start
+8.0 freelance recruiter component css start
+9.0 contact component css start
+10.0 footer component css start
+11.0 freelance recruiter reg component css start
+12.0 available jobs component css start
+13.0 career advisor component css start
+14.0 client registration form component css start
+15.0 connect component css start
+16.0 consultant & career advisor reg component css start
+17.0 create account component css start
+18.0 login and registration css start
+19.0 job details component css start
+20.0 labout law component css start
+21.0 services details common css start
+22.0 hr services component css start
+----------------------------------------------------------------------------------------
+*/
+
+
+/* default css start */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/* default css end */
+
+
+/* common css start */
+.greyBar{
+    background-color: #ebebeb;
+    width: 75px;
+    height: 5px;
+}
+.greyBarBig{
+    background-color: #ebebeb;
+    width: 280px;
+    height: 5px;
+}
+.darkGreyBarBig{
+    background-color: #3d3d3d;
+    width: 75px;
+    height: 5px;
+}
+.whiteBar{
+    background-color: #ffffff;
+    width: 75px;
+    height: 5px;
+}
+.talentTracker__btn{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #9bb332;
+    border: none;
+    border-radius: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.talentTracker__btn:hover{
+    border: 3px solid #9bb332;
+    background-color: #ffffff;
+    color: #9bb332;
+    transition: 0.2s;
+}
+.section__titleBanner{
+    background-image: url(./../../asset/images/clients/clients-banner.webp);
+    width: 100%;
+    height: 130px;
+    position: relative;
+}
+.section__titleBanner--overlay{
+    position: absolute;
+    background-color: rgba(3, 93, 151, 0.8);
+    width: 100%;
+    height: 130px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section__title{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Oswald';
+    color: #ffffff;
+}
+.verticalBar{
+    background-color: #3d3d3d;
+    width: 6px;
+    height: 30px;
+}
+.formArea{
+    padding: 22px 28px;
+}
+.formArea__dropDown{
+    height: 45px;
+}
+.formAreaBorder{
+    border: 1px solid #595959;
+    border-radius: 30px;
+}
+.formAreaFileUpload{
+    border: 1px solid #595959;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+}
+.fileUpload__note{
+    color: #595959;
+    font-size: 12px;
+    padding-left: 25px;
+}
+.categorySection {
+	background-color: #ebebeb;
+	width: 100%;
+	height: 125px;
+}
+.checkbox__label{
+    padding-left: 10px;
+}
+.checkbox__boxSpacing{
+    margin-left: 50px;
+}
+.checkbox__box{
+    transform: scale(1.5);
+}
+.checkbox__boxItem{
+    font-size: 18px;
+    font-weight: 600;
+}
+.from__label{
+    padding-left: 15px;
+    font-weight: 600;
+}
+.grdiantBtn{
+    background: linear-gradient(to right, #035a95 0%, #0498bd 100%);
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 30px;
+    border: none;
+}
+.grdiantBtn:hover{
+    background: linear-gradient(to right, #0498bd 0%, #035a95 100%);
+    transition: 0.5s;
+    border: none;
+}
+.page__bg{
+    background-image: url(./assets/images/bg/waveBg.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    background-size: 100% 100%;
+}
+.details__btn{
+    background-color: #035a95;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #035a95;
+    border-radius: 30px;  
+}
+.details__btn:hover{
+    background-color: #b9d056;
+    border: 2px solid #3d3d3d;
+    color: #3d3d3d;
+    transition: 0.3s;
+}
+.talentTracker__pagination {
+	display: flex;
+	justify-content: center;
+}
+.talentTracker__pagination--pagelink {
+	color: #3d3d3d;
+	font-weight: 600;
+	background-color: #ebebeb;
+	border: 1px solid #3d3d3d;
+}
+.talentTracker__pagination--pagelink:hover{
+    background-color: #ffffff;
+    color: #035a95;
+	border: 1px solid #3d3d3d;
+}
+.pageSection__title{
+    color: #3d3d3d;
+    font-size: 55px;
+    font-weight: 600;
+    font-family: 'Oswald';
+}
+.jobCategory__checkBoxSection {
+	background-color: #ebebeb;
+	width: 100%;
+	height: 135px;
+}
+/* common css end */
+
+
+/* 1.0 top nav component css start */
+.topNav__bg{
+    background: linear-gradient(to right, #035a95 0%, #0498bd 100%);
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px solid #ffffff;
+}
+.topNav__logoImg{
+    height: 60px;
+}
+.topNav__navItem{
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+.topNav__navItem:hover{
+    color: #b9d056 !important;
+    transition: 0.5s;
+}
+/* 1.0 top nav component css end */
+
+
+/* 2.0 top banner component css start */
+.topBanner__bg{
+    background-image: url(./../images/banner.webp);
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.topBanner__desSection{
+    padding-top: 25%;
+}
+.topBanner__title{
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Oswald';
+}
+.topBanner__subTitle{
+    color: #b9d056;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* 2.0 top banner component css end */
+
+/* 3.0 about component css start */
+.about__titleSection{
+    margin-top: 60%;
+}
+.about__title{
+    font-size: 60px;
+    color: #3d3d3d;
+    font-weight: 600;
+    font-family: 'Oswald';
+}
+.about__desSection {
+    background-color: #ebebeb;
+    width: 100%;
+    height: 577px;
+}
+.about__des{
+    color: #3d3d3d;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    padding: 70px;
+}
+.about__seeMoreBtn {
+    height: 36px;
+    width: 150px;
+}
+/* 3.0 about component css end */
+
+/*4.0 management team css start*/
+.managementTeam__title{
+    color: #035a95;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Oswald';
+}
+.managementTeam__card{
+    border: none;
+    padding: 20px;
+    position: relative;
+}
+.managementTeam__cardImg{
+    border-radius: 50%;
+    border: 1px solid #6a6f71;
+    width: 100%;
+    box-shadow:
+        0 0 0 6px hsl(0, 0%, 96%),
+        0 0 0 7px hsl(197, 3%, 43%)
+}
+.managementTeam__name{
+    font-size: 25px;
+    font-weight: 800;
+    color: #035a95;
+    line-height: 10px;
+}
+.managementTeam__designation{
+    color: #656565;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.managementTeam__imgSection{
+    position: relative;
+}
+.managementTeam__overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:  rgba(3, 93, 151, 0.7);
+    overflow: hidden;
+    height: 0;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+.managementTeam__imgSection:hover .managementTeam__overlay{
+    height: 100%;
+}
+.managementTeam__socialIcon{
+    list-style: none;
+    position: absolute;
+    width: 145px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.managementTeam__socialIcon li{
+    display: inline;
+}
+.managementTeam__socialIcon li a{
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/*4.0 management team css end*/
+
+/* 5.0 client component css start */
+.client__logoSection{
+    list-style: none;
+}
+.client__logoSection li{
+    display: inline-block;
+    width: 195px;
+    height: 116px;
+    margin: 10px;
+}
+/* 5.0 client component css end */
+
+/* 6.0 service component css start */
+.services__banner{
+    background-image: url(./../../asset/images/serviceBanner.webp);
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.service__allServices{
+    position: absolute;
+    background: linear-gradient(to right, #0498bd 0%, #035a95 100%);
+    width: 90%;
+    height: 580px;
+    top: 35%;
+    left: 85%;
+}
+.services__title{
+    color: #3d3d3d;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Oswald';
+    width: 100%;
+    text-align: right;
+    position: relative;
+}
+.service__allServices ul{
+    list-style: none;
+    padding: 40px 0 0 60px;
+}
+.service__allServices ul li{
+    padding: 16px 0 0 15px;
+}
+.service__allServices ul li a{
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+.service__allServices ul li a:hover{
+    color: #9bb332 !important;
+}
+/* 6.0 service component css end */
+
+/*7.0 consultant and career advisor component css start*/
+.consultant__sectionArea{
+    margin-top: 28%;
+}
+.consultantAndCareerAdvisor__cardArea{
+    padding: 30px;
+    position: relative;
+}
+.consultantAndCareerAdvisor__card{
+    border: none;
+    padding: 20px;
+}
+.consultantAndCareerAdvisor__img{
+    margin: auto;
+    width: 27%;
+}
+.consultantAndCareerAdvisor__title{
+    color: #035a95;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Oswald';
+}
+.consultantAndCareerAdvisor__card:hover .consultantAndCareerAdvisor__title{
+    transition: 0.3s;
+    color: #b9d056;
+}
+.consultantAndCareerAdvisor__card:hover{
+    transition: 0.5s;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.consultant__verticalBar {
+    position: absolute;
+    bottom: 26%;
+    left: 50%;
+}
+/*7.0 consultant and career advisor component css end*/
+
+/* 8.0 freelance recruiter component css start */
+.freelance__title{
+    color: #3d3d3d;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Oswald';
+}
+.freelance__des{
+    color: #3d3d3d;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+.freelance__btn {
+	height: 40px;
+	width: 200px;
+	text-transform: uppercase;
+}
+/* 8.0 freelance recruiter component css end */
+
+/* 9.0 contact component css start */
+.contact__sectionTitle{
+    color: #3d3d3d;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Oswald';
+}
+.contact__sectionArea{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 685px;
+}
+.contact__details a {
+	font-weight: 500;
+	color: #3d3d3d;
+	font-size: 16px;
+}
+.contact__btn {
+	height: 50px;
+	width: 225px;
+}
+.contact__map {
+	width: 100%;
+	height: 383px;
+}
+/* 9.0 contact component css end */
+
+/* 10.0 footer component css start */
+.footer__area{
+    background: linear-gradient(to right, #035a95 0%, #0498bd 100%);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.footer__copyRight{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footer__socialIcons--area{
+    list-style: none;
+}
+.footer__socialIcons--area li{
+    display: inline;
+}
+.footer__socialIcons--area li a{
+    padding: 0 15px;
+}
+.footer__socialIcons--area li a img{
+    height: 23px;
+}
+/* 10.0 footer component css end */
+
+/* 11.0 freelance recruiter reg component css start */
+
+.freelanceRecruiterReg__btn{
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    font-size: 26px;
+}
+/* 11.0 freelance recruiter reg component css start */
+
+/* 12.0 available jobs component css start */
+.avaiablejobs__jobCard{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 130px;
+    margin-top: 30px;
+    position: relative;
+}
+.avaiablejobs__jobIcon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 130px;
+}
+.avaiablejobs__jobDes {
+	position: absolute;
+	top: 15px;
+	left: 40%;
+}
+.availableJobs__jobTitle{
+    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 600;
+}
+.availableJobs__jobCategory{
+    color: #3d3d3d;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.availableJobs__btn {
+    height: 34px;
+    width: 160px;
+    display: block;
+    text-align: center;
+    line-height: 29px;
+}
+
+.availableJobs__pageBg{
+    height: 150vh;
+}
+/* 12.0 available jobs component css end */
+
+/* 13.0 career advisor component css start */
+.careerAdvisor__cardArea {
+	background-color: #ebebeb;
+	width: 100%;
+	height: 180px;
+	position: relative;
+}
+.careerAdvisor__cardImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 179px;
+}
+.careerAdvisor__cardItems{
+    position: relative;
+    top: 5%;
+    left: 42%;
+}
+.careerAdvisor__des{
+    color: #3d3d3d;
+    font-weight: 400;
+    font-size: 15px;
+}
+.careerAdvisor__name{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.careerAdvisor__charge{
+    font-weight: 600;
+}
+.careerAdvisor__connect--btn{
+    text-transform: uppercase;
+    height: 35px;
+    width: 130px;
+}
+.careerAdvisor__cardArea{
+    margin-top: 30px;
+}
+.careerAdvisor__pageBg {
+	height: 1066px;
+}
+.careerAdvisor__cardAreaSection{
+    overflow-x: hidden;
+}
+/* 13.0 career advisor component css end */
+
+/* 14.0 client registration form component css start */
+.clientRegForm__sectionTitle{
+    color: #3d3d3d;
+    font-size: 18px;
+    font-weight: 600;
+}
+.clientReg__formLabel{
+    font-weight: 500;
+    color: #3d3d3d;
+}
+.clientRegFrom__address{
+    margin-bottom: 0;
+}
+.clientRegFrom__pageBg{
+    height: 1500px;
+}
+/* 14.0 client registration form component css end */
+
+/* 15.0 connect component css start */
+.connect__pageBg{
+    height: 100vh;
+}
+/* 15.0 connect component css end */
+
+/* 16.0 consultant & career advisor reg component css start */
+.consultantAndCareerAdvisorReg__pageBg{
+    height: 1150px;
+}
+/* 16.0 consultant & career advisor reg component css end */
+
+/* 17.0 create account component css start */
+.createAccount__pageBg{
+    height: 1300px;
+}
+.createAccount__radioBtnLabel {
+    color: #3d3d3d;
+    border: 1px solid #3d3d3d;
+    border-radius: 30px;
+    height: 46px;
+    width: 157px;
+    padding: 1% 5%;
+    margin: 0 6px;
+    cursor: pointer;
+}
+.createAccount__radioBtn:checked + label{
+    background-color: #b9d056;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+}
+.createAccount__radioBtn:checked + label:before{
+    background-color: #b9d056;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+}
+.createAccount__passwordField{
+    font-size: 11px;
+}
+.createAccount__signInSection{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createAccount__signInSection--text{
+    color: #3d3d3d;
+    font-weight: 600;
+    margin: auto;
+}
+.createAccount__signInSection--btn {
+    height: 46px;
+    width: 450px;
+    border-radius: 35px;
+    margin-top: 10px;
+    background-color: #a5ba4c;
+    border: 2px solid #a5ba4c;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.createAccount__signInSection--btn:hover{
+    border: 2px solid #a5ba4c;
+    background-color: #ffffff;
+    color: #a5ba4c;
+    transition: 0.5s;
+}
+/* 17.0 create account component css end */
+
+/*18.0 login and registration css start*/
+.loginRegistration__pageBg{
+    height: 700px;
+}
+.loginRegistration__registrationSection{
+    list-style: none;
+}
+.loginRegistration__registrationBtn {
+    height: 50px;
+    width: 300px;
+    margin-top: 15px;
+    background-color: #035a95;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.loginRegistration__registrationBtn:hover {
+    background-color: #a5ba4c;
+    transition: 0.3s;
+}
+.loginRegistration__signInSection {
+    background: linear-gradient(to right, #035a95 0%, #0498bd 100%);
+    height: 535px;
+    width: 100%;
+}
+.loginRegistration__signInTitle{
+    color: #ffffff;
+}
+.whiteBarSignin {
+    background-color: #ffffff;
+    width: 75px;
+    height: 5px;
+    margin: 0 -15px;
+}
+.loginRegistration__formArea {
+    padding: 35px;
+}
+.loginRegistration__label{
+    color: #ffffff;
+}
+.loginRegistration__forgotPassword{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+}
+.loginRegistration__forgotPassword:hover{
+    color: #a5ba4c;
+    transition: 0.3s;
+}
+.loginRegistration__signInBtn {
+    width: 100%;
+    height: 46px;
+    background-color: #035a95;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 13px;
+}
+.loginRegistration__signInBtn:hover {
+    border: none;
+    background-color: #ffffff;
+    color: #035a95;
+    transition: 0.3s;
+}
+/*18.0 login and registration css end*/
+
+/* 19.0 job details component css start */
+.jobDetails__title{
+    color: #035a95;
+    font-weight: 600;
+    font-size: 24px;
+}
+.jobDetails__des{
+    color: #3d3d3d;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+}
+.jobDetails__pdfViewer{
+    width: 100%;
+    height: 1000px;
+}
+.jobDetails__btn {
+	width: 350px;
+	height: 50px;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+/* 19.0 job details component css end */
+
+/* 20.0 labout law component css start */
+.labourLaw__pdfViewer {
+	width: 100%;
+	height: 1400px;
+}
+/* 20.0 labout law component css end */
+
+/* 21.0 services details common css start */
+.serviceDetails__briefArea {
+	background-color: #ebebeb;
+	width: 100%;
+	height: 250px;
+}
+.serviceDetails__brief {
+	color: #3d3d3d;
+	font-weight: 600;
+	text-align: justify;
+	padding: 40px;
+}
+.serviceDetrails__pageBg {
+	height: 670px;
+}
+.serviceDetails__titleBg{
+    background-color: #035a95;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.serviceDetails__title {
+	color: #ffffff;
+	font-size: 32px;
+	font-weight: 600;
+	font-family: 'Oswald';
+	padding-left: 25px;
+}
+.serviceDetails__list{
+    list-style: none;
+}
+.serviceDetails__list li {
+	line-height: 40px;
+	font-weight: 600;
+	color: #3d3d3d;
+}
+.serviceDetails__bullet{
+    padding-right: 10px;
+}
+/* 21.0 services details common css end */
+
+/* 22.0 hr services component css start */
+.hrService__items {
+	color: #035a95;
+	font-size: 22px;
+	font-weight: 500;
+}
+/* 22.0 hr services component css end */
